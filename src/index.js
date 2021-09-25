@@ -6,10 +6,11 @@ const price = document.querySelector("#price-input");
 
 const quantity_output = document.querySelector("#show-quantity");
 const price_output = document.querySelector("#show-price");
+const total_price_output = document.querySelector("#show-total-price");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   quantity_output.innerHTML = "Quantity: " + quantity.value
   price_output.innerHTML = "Price: " + price.value
-  div.innerHTML = "<p>"+ calcularTotal(quantity.value,price.value) + "</p>";
+  total_price_output.innerHTML = "<p>"+ calcularTotal(quantity.value,price.value) + "</p>";
 });
