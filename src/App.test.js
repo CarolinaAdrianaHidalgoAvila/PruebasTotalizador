@@ -1,4 +1,4 @@
-import calculate_discount from "./App.js";
+import calcularTotal from "./App.js";
 //import calculate_discount from "./App.js";
 describe("Totalizador", () => {
   it("deberia mostrar cantidad ingresada", () => {
@@ -28,10 +28,14 @@ describe("Totalizador", () => {
     expect(calcularTotal(10,15,"AL")).toEqual(156);
 
   });
-  
+  /*
   it("deberia mostrar descuento segun precio", () => {
     expect(calculate_discount(30000)).toEqual(454500);
 
   });
+  */
+  it("deberia mostrar precioTotal con impuestos y descuentos", () => {
+    expect(calcularTotal(30000,1,"UT")).toEqual(27195.75);
 
+  });
 });

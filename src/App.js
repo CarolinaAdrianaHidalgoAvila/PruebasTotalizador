@@ -16,6 +16,7 @@ var discount_groups = {
   30000:0.15
 }
 function calculate_discount(total){
+  let discount = 0;
   switch (true) {
       case (total >= 30000 ):
           discount = total * discount_groups[30000]
@@ -44,8 +45,8 @@ function calcularTotal(quantity, price, state){
   let tax = taxes[state];
   let total_taxes_price =  _.round(total_price * (1+tax),2);
   let discount = _.round(calculate_discount(total_taxes_price),2)
-  return total_taxes_price;
+  return total_taxes_price - discount;
 }
-export default calculate_discount;
-//export default calcularTotal, calculate_discount;
+//export default calculate_discount;
+export default calcularTotal;
 
