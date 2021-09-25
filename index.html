@@ -1,15 +1,16 @@
 <html>
+  <head>
+  </head>
   <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="first-number">First Number:</label>
-      <input type="number" id="first-number" />
-      <label for="second-number">Second Number:</label>
-      <input type="number" id="second-number" />
-      <input type="submit" value="Sumar" />
+    <h1 id="title">Sales totalizer</h1>
+    <form id="totalizer-form">
+      <div>
+        <label for="quantity-input">Quantity:</label>
+        <input type="int" id="quantity-input" />
+      </div><br>
+      <input type="submit" value="Confirm" />
     </form>
-    <div id="resultado-div"></div>
-
-    <script type="module" src="./src/index.js"></script>
+    <p id="show-quantity"></p>
+    <script src="./src/index.js"></script>
   </body>
 </html>
