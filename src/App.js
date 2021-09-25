@@ -1,5 +1,6 @@
-function calcularTotal(a){
-  return a;
+function calcularTotal(cantidad,precio){
+  return cantidad;
+  return precio;
 }
 function multiplicar(a,b){
   return a * b;
