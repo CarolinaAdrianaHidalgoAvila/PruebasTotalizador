@@ -7,10 +7,7 @@ const state = document.querySelector("#state");
 
 const quantity_output = document.querySelector("#show-quantity");
 const price_output = document.querySelector("#show-price");
-const total_price_output = document.querySelector("#show-total-price");
 const total_taxes_price_output = document.querySelector("#show-total-taxes-price");
-const state_tax_output = document.querySelector("#show-state");
-
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();

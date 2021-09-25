@@ -20,6 +20,10 @@ describe("Totalizador", () => {
     expect(calcularTotal(10,15,"P")).toEqual(150);
 
   });
+  /*it("deberia mostrar precioTotal y estado elegido", () => {
+    expect(calcularTotal(10,15,"AL")).toEqual(156,"AL");
+
+  });*/
   it("deberia mostrar precioTotal con impuestos segun estado", () => {
     expect(calcularTotal(10,15,"AL")).toEqual(156);
 
