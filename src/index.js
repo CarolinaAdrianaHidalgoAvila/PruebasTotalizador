@@ -12,5 +12,5 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   quantity_output.innerHTML = "Quantity: " + quantity.value
   price_output.innerHTML = "Price: " + price.value
-  total_price_output.innerHTML = "<p>"+ calcularTotal(quantity.value,price.value) + "</p>";
+  total_price_output.innerHTML = "<p>"+ calcularTotal(quantity.value,price.value,0.5) + "</p>";
 });
