@@ -12,6 +12,7 @@ const total_taxes_discount_output = document.querySelector("#show-total-taxes-di
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+  alert("SALE WAS CONFIRMED")
   quantity_output.innerHTML = "Quantity: " + quantity.value
   price_output.innerHTML = "Price: " + price.value
   total_taxes_discount_output.innerHTML = "<p>"+"Total with taxes and discount: "+ calcularTotal(quantity.value,price.value,state.value) + "</p>";
