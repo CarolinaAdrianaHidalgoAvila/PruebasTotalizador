@@ -2,6 +2,7 @@ import calcularTotal from "./App";
 
 const form = document.querySelector("#totalizer-form");
 const quantity = document.querySelector("#quantity-input");
+const price = document.querySelector("#price-input");
 
 const quantity_output = document.querySelector("#show-quantity");
 const price_output = document.querySelector("#show-price");
